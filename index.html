@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang='en-us'>
+
+  <head>
+
+    <meta charset='UTF-8'>
+    <title>Week 4 Game</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+
+  <body>
+  	<div class="gametitle">CrystalsCollector!
+  	</div>
+      
+    		<div class="rules">
+
+              <p>
+
+              You will be given a random number at the start of the game.<br> 
+              <br>
+
+        	    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+              <br>
+              <br>
+
+              You win the game by matching your total score to random number, you lost the game if your total score goes above the random number.
+              <br>
+              <br>
+
+              The value of each crystal is hidden from you until you click on it.
+              <br>
+              <br>
+
+              Each time when the game starts, the game will change the falues of each crystal.
+              <br>
+             </p>
+        </div>
+
+     <div class="random-number">
+
+
+	 </div>
+
+   <div class="panel panel-default">
+          <div class="panel-body">
+
+            <ul>
+            <li><strong>Wins: </strong> <span id="win-counter">0</span></li>
+            <li><strong>Losses: </strong> <span id="loss-counter">0</span></li>
+            </ul>
+
+          </div>
+        </div>
+
+       <div class="crystal-images">
+        <button id="amethyst-button" class="btn btn-primary btn-lg"><img src="assets/images/amethyst.png" alt="amethyst icon"style="width:42px;height:42px;"></button>
+        <button id="amethyst-button" class="btn btn-primary btn-lg"><img src="assets/images/citrine.png" alt="citrine icon"style="width:42px;height:42px;"></button>
+        <button id="amethyst-button" class="btn btn-primary btn-lg"><img src="assets/images/emerald.png" alt="emerald icon"style="width:42px;height:42px;"></button>
+        <button id="amethyst-button" class="btn btn-primary btn-lg"><img src="assets/images/peridot.png" alt="peridot icon"style="width:42px;height:42px;"></button>
+
+      </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+            <strong>Your total score is: </strong> <span id="total-score"</span>
+          </div>
+
+        <div class="crystal-counter"></div>
+
+
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+      <script type="text/javascript">
+
+        var random = Math.floor(Math.random() * 120) + 19;
+          
+              $(".random-number").html(random);
+
+       
+
+//         var purple = Math.floor(Math.random() * 12) + 1;   
+//         var gold = Math.floor(Math.random() * 12) + 1;
+//         var green = Math.floor(Math.random() * 12) + 1;
+//         var kiwi = Math.floor(Math.random() * 12) + 1;
+
+// $("#amethyst-button").click(function){
+//               update(purple);
+//            });
+  </script>
+
+
+  </body>
+
+</html>
+ 
+
+  
